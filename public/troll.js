@@ -1,4 +1,4 @@
-function test(id, email, password) {
+function HUGEBUY(id, email, password) {
   var email = prompt("Enter your investopia email");
   var password = prompt("Enter your password");
   var data = { email: email, password: password }
