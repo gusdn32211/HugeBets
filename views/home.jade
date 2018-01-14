@@ -8,32 +8,20 @@ html
   body
     div.container
       div.jumbotron
-        h1 Hello!
-  
-        p Welcome to my app, ready to get started?
+        h1 Hugh House
+        p Click one of the developer's faces to buy a stock!
         p
           span.small Don't have an account?
           span &nbsp;
           a.small(href="https://www.investopedia.com/simulator/") Register now
 
-        form(action='/signup',method='post')
-          div(data-role='fieldcontain')
-            fieldset(data-role='controlgroup')
-              label(for='email') email
-                 input(id='email',type='text',value='',placeholder='@',name='email')
-          div#passworddiv(data-role='fieldcontain')
-            fieldset(data-role='controlgroup')
-              label(for='password') password
-                 input(id='password',type='password',value='',placeholder='',name='password')
-          div(data-role='fieldcontain')   
-            input.btn.btn-primary(type='submit',value='Log In',data-transition='fade', data-theme='c')
+        img.resize-half(id="alexl" src="/images/AlexL.jpg", onclick="test(this.id);")
+        img.resize-half(id="clarence" src="/images/ClarenceL.jpg", onclick="test(this.id);")
+        img.resize-half(id="alext" src="/images/AlexT.jpg", onclick="test(this.id);")
+        img.resize-half(id="felix" src="/images/FelixT.jpg", onclick="test(this.id);")
 
-        img.resize-half(src="/images/AlexL.jpg", onclick="test();")
-        img.resize-half(src="/images/ClarenceL.jpg")
-        img.resize-half(src="/images/AlexT.jpg")
-        img.resize-half(src="/images/FelixT.jpg")
-
-        img.resize-full.image-responsive(src="/images/HugeBetsTeam.png")
+        a(href="https://www.facebook.com/YoloOnFNMA-211269462684651/" target="_blank")
+          img.resize-full.image-responsive( src="/images/HugeBetsTeam.png")
 
 
 
