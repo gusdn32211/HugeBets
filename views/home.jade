@@ -9,19 +9,21 @@ html
     div.container
       div.jumbotron
         h1 Hugh House
-        p Click one of the developer's faces to buy a stock!
+        a(style="position:absolute; left: 600px; top: 40px" href="https://www.facebook.com/YoloOnFNMA-211269462684651/" target="_blank")
+          img.image-responsive( src="/images/logo.png")
+        p Click on one of the developer's faces to buy a stock!
         p
           span.small Don't have an account?
           span &nbsp;
-          a.small(href="https://www.investopedia.com/simulator/") Register now
+          a.small(href="https://www.investopedia.com/simulator/" target="_blank") Register now
 
-        img.resize-half(id="alexl" src="/images/AlexL.jpg", onclick="test(this.id);")
-        img.resize-half(id="clarence" src="/images/ClarenceL.jpg", onclick="test(this.id);")
-        img.resize-half(id="alext" src="/images/AlexT.jpg", onclick="test(this.id);")
-        img.resize-half(id="felix" src="/images/FelixT.jpg", onclick="test(this.id);")
+        img.resize-half(id="alexl" src="/images/AlexL.jpg", onclick="HUGEBUY(this.id);")
+        img.resize-half(id="clarence" src="/images/ClarenceL.jpg", onclick="HUGEBUY(this.id);")
+        img.resize-half(id="alext" src="/images/AlexT.jpg", onclick="HUGEBUY(this.id);")
+        img.resize-half(id="felix" src="/images/FelixT.jpg", onclick="HUGEBUY(this.id);")
 
+        h1.huge Huge Team
         a(href="https://www.facebook.com/YoloOnFNMA-211269462684651/" target="_blank")
-          h1.huge Huge Team
           img.resize-full.image-responsive( src="/images/HugeBetsTeam.png")
 
 
