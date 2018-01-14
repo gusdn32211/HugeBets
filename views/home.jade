@@ -6,18 +6,22 @@ html
     div.container
       div.jumbotron
         h1 Hello!
- 
-        if user
-          p Welcome, #{user.fullName}
-          p
-            a.small(href="profile") Edit my profile
-          form(action='/logout', method='POST')
-            button.btn.btn-default(type="submit") Logout
-        else
-          p Welcome to my app, ready to get started?
-          p
-            a.btn.btn-primary(href="/login") Login now
-          p
-            span.small Don't have an account?
-            span &nbsp;
-            a.small(href="/register") Register now
+  
+        p Welcome to my app, ready to get started?
+        p
+          span.small Don't have an account?
+          span &nbsp;
+          a.small(href="https://www.investopedia.com/simulator/") Register now
+
+        div
+          form(action='/signup',method='post')
+            div(data-role='fieldcontain')
+              fieldset(data-role='controlgroup')
+                label(for='email') email
+                   input(id='email',type='text',value='',placeholder='@',name='email')
+            div#passworddiv(data-role='fieldcontain')
+              fieldset(data-role='controlgroup')
+                label(for='password') password
+                   input(id='password',type='password',value='',placeholder='',name='password')
+            div(data-role='fieldcontain')   
+              input.btn.btn-primary(type='submit',value='Log In',data-transition='fade', data-theme='c')
