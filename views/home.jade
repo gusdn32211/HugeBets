@@ -2,6 +2,7 @@ html
   head
     title=title
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   body
     div.container
       div.jumbotron
@@ -25,11 +26,15 @@ html
           div(data-role='fieldcontain')   
             input.btn.btn-primary(type='submit',value='Log In',data-transition='fade', data-theme='c')
 
-        img.image(src="/images/AlexL.jpg")
-        img.image(src="/images/AlexT.jpg")
-        img.image(src="/images/ClarenceL.jpg")
-        img.image(src="/images/FelixT.jpg")
-        img.image(src="/images/HugeBetsTeam.png")
+        img.resize-half(onclick="javascript:huge('im gay')" src="/images/AlexL.jpg")
+        img.resize-half(onclick="javascript:huge('im huge')" src="/images/ClarenceL.jpg")
+        img.resize-half(onclick="javascript:huge('huehuehue anime weeb shit')" src="/images/AlexT.jpg")
+        img.resize-half(onclick="javascript:huge('im alpha')" src="/images/FelixT.jpg")
+
+        img.resize-full.image-responsive(src="/images/HugeBetsTeam.png")
+
+        script.
+          function huge(string) { alert(string); }
 
 
 
