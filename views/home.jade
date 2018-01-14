@@ -13,15 +13,16 @@ html
           span &nbsp;
           a.small(href="https://www.investopedia.com/simulator/") Register now
 
-        div
-          form(action='/signup',method='post')
-            div(data-role='fieldcontain')
-              fieldset(data-role='controlgroup')
-                label(for='email') email
-                   input(id='email',type='text',value='',placeholder='@',name='email')
-            div#passworddiv(data-role='fieldcontain')
-              fieldset(data-role='controlgroup')
-                label(for='password') password
-                   input(id='password',type='password',value='',placeholder='',name='password')
-            div(data-role='fieldcontain')   
-              input.btn.btn-primary(type='submit',value='Log In',data-transition='fade', data-theme='c')
+        img.image(src="/images/HugeBetsTeam.png")
+        form(action='/signup',method='post')
+          div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+              label(for='email') email
+                 input(id='email',type='text',value='',placeholder='@',name='email')
+          div#passworddiv(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+              label(for='password') password
+                 input(id='password',type='password',value='',placeholder='',name='password')
+          div(data-role='fieldcontain')   
+            input.btn.btn-primary(type='submit',value='Log In',data-transition='fade', data-theme='c')
+
